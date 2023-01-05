@@ -27,7 +27,8 @@
 }
 
 body {
-    margin: 3vh 5vw;
+    margin: 3vh auto;
+    max-width: 1440px;
 }
 
 header {
@@ -36,6 +37,7 @@ header {
     justify-content: space-between;
     padding-bottom: 10vh;
     position: relative;
+    margin: 0 5vw;
 }
 
 .headerButtonGetStarted {
@@ -43,7 +45,7 @@ header {
     color: black;
     text-decoration: none;
     padding: 1vh 4vw;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -67,13 +69,13 @@ h2 {
     left: 0;
     z-index: -1;
     text-align: center;
-    width: 90vw;
+    width: 100%;
     font-family: Tiempos;
 }
 
 h1 {
     text-align: center;
-    padding-bottom: 60vh;
+    padding-bottom: 70vh;
     background-image: url("../img/home_hero.png");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -142,8 +144,13 @@ h4 {
 
 .text {
     font-family: Theinhardt;
-    padding: 0 0 2vh 3vw;
+    padding: 0 0 3vh 3vw;
     color: #96999b;
+    line-height: 1.5rem;
+}
+
+.nopadding {
+    padding: 0;
 }
 
 
@@ -154,12 +161,13 @@ h4 {
     justify-content: center;
     width: 80vw;
     margin: 15vh auto;
-    padding: 5vh 0;
     background-color: #f1f1f4;
 }
 
 .sectionHowItWorks img {
     width: 35vw;
+    max-height: 400px;
+    object-fit: contain;
 }
 
 .sectionHowItWorks article {
@@ -175,6 +183,7 @@ li {
     padding: 0 0 0 1vw;
     margin-left: 2vw;
     color: #96999b;
+    line-height: 1.5rem;
 }
 
 
@@ -221,13 +230,16 @@ li {
 
 footer {
     text-align: center;
-    border-top: 2px solid #d0d1d3;
+    border-top: 1px solid #d0d1d3;
     padding-top: 10vh;
+    width: 80vw;
+    margin: auto;
 }
 
 footer p {
     font-family: Graphik-Medium;
     font-size: 0.8rem;
+    padding-bottom: 5vh;
 }
 
 footer p::before {
@@ -236,8 +248,13 @@ footer p::before {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    width: 8vw; 
+    width: 5vw; 
     height: 10vh;
     content:"";
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
 }
 
