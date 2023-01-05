@@ -38,16 +38,37 @@ header {
     position: relative;
 }
 
+.headerButtonGetStarted {
+    font-family: Graphik-Regular;
+    color: black;
+    text-decoration: none;
+    padding: 1vh 4vw;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.headerButtonGetStarted:hover {
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    font-family: Graphik-Regular;
+    color: black;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-size: 0.8rem;
+}
+
 h2 {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
     text-align: center;
     width: 90vw;
-}
-
-.getStartedButton {
-    
+    font-family: Tiempos;
 }
 
 h1 {
@@ -57,22 +78,45 @@ h1 {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    font-family: Graphik-Regular;
 }
 
+
+/* Section Price */
 .sectionPrice {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: top;
+    justify-content: space-between;
     padding: 20vh 0;
     width: 80vw;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .sectionPrice p {
     width: 70%;
     padding-right: 5vw;
+    font-family: Graphik-Medium;
+    line-height: 1.5rem;
 }
 
+.sectionPrice article p:nth-of-type(1) {
+    font-family: Theinhardt;
+    font-size: 4rem;
+    padding: 2vh 0;
+}
+
+.sectionPrice article p:nth-of-type(2) {
+    font-family: Theinhardt;
+    font-size: 0.8rem;
+    color: #a4a7ab;
+    padding: 2vh 0;
+    width: 80%;
+    line-height: 1rem;
+}
+
+
+/* Section Deliverables */
 .sectionDeliverables {
     display: flex;
     align-items: center;
@@ -82,26 +126,59 @@ h1 {
 }
 
 .sectionDeliverables img {
-    width: 40vw;
+    width: 35vw;
 }
 
+h3 {
+    font-family: Tiempos;
+    font-size: 2.5rem;
+    padding: 0 0 3vh 3vw;
+}
+
+h4 {
+    font-family: Graphik-Medium;
+    padding: 0 0 1vh 3vw;
+}
+
+.text {
+    font-family: Theinhardt;
+    padding: 0 0 2vh 3vw;
+    color: #96999b;
+}
+
+
+/* Section How it works */
 .sectionHowItWorks {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80vw;
-    margin: 10vh auto;
+    margin: 15vh auto;
+    padding: 5vh 0;
     background-color: #f1f1f4;
 }
 
 .sectionHowItWorks img {
-    width: 40vw;
+    width: 35vw;
 }
 
 .sectionHowItWorks article {
     margin: 0 5vw;
 }
 
+ol {
+    padding-bottom: 2vh;
+}
+
+li {
+    font-family: Theinhardt;
+    padding: 0 0 0 1vw;
+    margin-left: 2vw;
+    color: #96999b;
+}
+
+
+/* section Critique */
 .sectionCritique {
     text-align: center;
 }
@@ -110,37 +187,47 @@ h1 {
     margin: 5vh 0;
 }
 
-.sectionCritique p {
-    width: 30vw;
-    margin: 0 auto 10vh auto;
+
+/* Image "28%" Positioning */
+.sectionCritique article {
+    padding: 10vh 0 20vh 0;
+    margin: 0 auto;
+    position: relative;
+    max-width: 50vw;
 }
 
-.sectionCritique article {
-    padding: 10vh 0 10vh 0;
-    margin-bottom: 10vh;
-    background-image: url("../img/28.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    text-align: right;
-    border-bottom: 2px solid #d0d1d3;
+.sectionCritiqueImgTwentyEight {
+    width: 100%;
 }
 
 .sectionCritique article p {
-    margin: 0 0 0 20vw;
-    position: absolute;
-    left: 0; 
-    top: 20vh;
-    z-index: 1;
+    margin: 0 0 0 10px;
+    width: 40vw;
+    text-align: left;
+    line-height: 2rem;
+    font-family: Graphik-Medium;
+    color: #96999b;
+    font-weight: 900;
 }
 
-.sectionCritique article img {
+.sectionCritiqueImgGuy {
     width: 40vw;
+    max-width: 600px;
+    position: absolute;
+    bottom: 15vh;
 }
+
+/* --- */
 
 footer {
     text-align: center;
+    border-top: 2px solid #d0d1d3;
+    padding-top: 10vh;
+}
+
+footer p {
+    font-family: Graphik-Medium;
+    font-size: 0.8rem;
 }
 
 footer p::before {
