@@ -24,3 +24,23 @@ button.addEventListener('mouseleave', function() {
     button.style.color = 'black';
     }
 });
+
+button.addEventListener('touchstart', function() {
+    if (button.classList.contains('headerButtonGetStartedIsBlack')) {
+    button.style.backgroundColor = 'white';
+    button.style.color = 'black';
+    } else {
+    button.style.backgroundColor = 'black';
+    button.style.color = 'white';
+    }
+});
+
+button.addEventListener('touchend', function() {
+    if (button.classList.contains('headerButtonGetStartedIsBlack')) {
+    button.style.backgroundColor = 'black';
+    button.style.color = 'white';
+    } else {
+    button.style.backgroundColor = 'white';
+    button.style.color = 'black';
+    }
+});

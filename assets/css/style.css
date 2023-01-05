@@ -280,10 +280,7 @@ footer p a {
     
     nav {
         padding-top: 7vh;
-    }
-
-    .headerButtonGetStarted {
-        margin-top: 4vh;
+        margin-bottom: 4vh;
     }
 
     h1 {
@@ -321,7 +318,7 @@ footer p a {
 
     .sectionDeliverables img {
         width: 60vw;
-        padding: 10vh 0;
+        padding: 5vh 0;
     }
 
     .sectionHowItWorks {
@@ -354,25 +351,24 @@ footer p a {
         padding: 3vh 0;
     }
 
-    .sectionCritiqueImgArticle p {
-        width: 50vw;
-    }
-
     .sectionCritiqueImgGuy {
-        bottom: 10vh;
+        bottom: 12vh;
     }
 
     .sectionCritiqueImgArticle p:nth-of-type(2), .sectionCritiqueImgArticle p:nth-of-type(3) {
         width: 100vw;
     }
-
-    .sectionCritiqueImgArticle p:nth-of-type(1) {
-        width: 40vw;
+    
+    footer p::before {
+        background-image: url('../img/costume_guy.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 10vw; 
+        height: 5vh;
+        content:"";
     }
-
-    .sectionCritiqueTextBellowTwentyEight {
-        display: inline;
-    }
+    
 }
 
 
