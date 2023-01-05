@@ -275,7 +275,7 @@ footer p::before {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    width: 5vw; 
+    width: 10vw; 
     height: 15vh;
     content:"";
 }
