@@ -40,7 +40,7 @@ header {
     margin: 0 5vw;
 }
 
-.headerButtonGetStarted {
+.headerButtonGetStartedIsNotBlack {
     font-family: Graphik-Regular;
     color: black;
     text-decoration: none;
@@ -50,10 +50,23 @@ header {
     border-radius: 5px;
 }
 
-.headerButtonGetStarted:hover {
+.headerButtonGetStartedIsBlack {
+    font-family: Graphik-Regular;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1vh 4vw;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* .headerButtonGetStartedIsNotBlack:hover {
     background-color: black;
     color: white;
 }
+ */
+
 
 nav a {
     font-family: Graphik-Regular;
@@ -198,7 +211,7 @@ li {
 
 
 /* Image "28%" Positioning */
-.sectionCritique article {
+.sectionCritiqueImgArticle {
     padding: 10vh 0 20vh 0;
     margin: 0 auto;
     position: relative;
@@ -209,7 +222,7 @@ li {
     width: 100%;
 }
 
-.sectionCritique article p {
+.sectionCritiqueImgArticle p {
     margin: 0 0 0 10px;
     width: 40vw;
     text-align: left;
@@ -257,4 +270,110 @@ footer p a {
     color: black;
     text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 5vh;
+    }
+    
+    nav {
+        padding-top: 7vh;
+    }
+
+    .headerButtonGetStarted {
+        margin-top: 4vh;
+    }
+
+    h1 {
+        padding: 6vw;
+        padding-bottom: 20vh;
+    }
+
+    .sectionPrice {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10vh 0;
+    }
+
+    .sectionPrice p {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .sectionPrice article p:nth-of-type(1) {
+        padding: 0;
+        margin-top: 10vh;
+    }
+    
+    .sectionPrice article p:nth-of-type(2) {
+        padding: 0;
+        margin-top: 3vh;
+        width: 100%;
+    }
+
+    .sectionDeliverables {
+        flex-direction: column;
+    }
+
+    .sectionDeliverables img {
+        width: 60vw;
+        padding: 10vh 0;
+    }
+
+    .sectionHowItWorks {
+        flex-direction: column-reverse;
+        padding: 5vh 1vw;
+        margin-top: 3vh;
+    }
+
+    .sectionHowItWorks img {
+        padding-bottom: 5vh;
+        width: 60vw
+    }
+    
+    ol {
+        margin-left: 5vw;
+    }
+    
+    .mobilepadding {
+        padding: 3vh 0;
+    }
+
+    .sectionCritiqueTextArticle {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    .sectionCritiqueImgArticle {
+        margin: 0 5vw 5vh 5vw;
+        max-width: none;
+        padding: 3vh 0;
+    }
+
+    .sectionCritiqueImgArticle p {
+        width: 50vw;
+    }
+
+    .sectionCritiqueImgGuy {
+        bottom: 10vh;
+    }
+
+    .sectionCritiqueImgArticle p:nth-of-type(2), .sectionCritiqueImgArticle p:nth-of-type(3) {
+        width: 100vw;
+    }
+
+    .sectionCritiqueImgArticle p:nth-of-type(1) {
+        width: 40vw;
+    }
+
+    .sectionCritiqueTextBellowTwentyEight {
+        display: inline;
+    }
+}
+
+
 
