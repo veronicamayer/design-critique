@@ -320,6 +320,7 @@ Mobile styles
     }
 
     .sectionPrice p {
+        padding: 0; /* wird von Desktop aufgehoben */
         width: 100%; /* wurde für Desktop beschränkt, muss deshalb hier aufgehoben werden */
         text-align: center;
     }
