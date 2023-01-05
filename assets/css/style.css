@@ -18,130 +18,17 @@
     src: url(../fonts/TiemposHeadline-Semibold.woff);
 }
 
-/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
-
+/* -------
+Globale styles
+---------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 3vh auto;
-    max-width: 1440px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 10vh;
-    position: relative;
-    margin: 0 5vw;
-}
-
-.headerButtonGetStartedIsNotBlack {
-    font-family: Graphik-Regular;
-    color: black;
-    text-decoration: none;
-    padding: 1vh 4vw;
-    font-size: 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.headerButtonGetStartedIsBlack {
-    font-family: Graphik-Regular;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 1vh 4vw;
-    font-size: 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-/* .headerButtonGetStartedIsNotBlack:hover {
-    background-color: black;
-    color: white;
-}
- */
-
-
-nav a {
-    font-family: Graphik-Regular;
-    color: black;
-    text-decoration: none;
-    margin: 0 1vw;
-    font-size: 0.8rem;
-}
-
-h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    text-align: center;
-    width: 100%;
-    font-family: Tiempos;
-}
-
-h1 {
-    text-align: center;
-    padding-bottom: 70vh;
-    background-image: url("../img/home_hero.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    font-family: Graphik-Regular;
-}
-
-
-/* Section Price */
-.sectionPrice {
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
-    padding: 20vh 0;
-    width: 80vw;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.sectionPrice p {
-    width: 70%;
-    padding-right: 5vw;
-    font-family: Graphik-Medium;
-    line-height: 1.5rem;
-}
-
-.sectionPrice article p:nth-of-type(1) {
-    font-family: Theinhardt;
-    font-size: 4rem;
-    padding: 2vh 0;
-}
-
-.sectionPrice article p:nth-of-type(2) {
-    font-family: Theinhardt;
-    font-size: 0.8rem;
-    color: #a4a7ab;
-    padding: 2vh 0;
-    width: 80%;
-    line-height: 1rem;
-}
-
-
-/* Section Deliverables */
-.sectionDeliverables {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    margin: 0 auto;
-}
-
-.sectionDeliverables img {
-    width: 35vw;
+html {
+    width: 100vw;
 }
 
 h3 {
@@ -162,12 +49,127 @@ h4 {
     line-height: 1.5rem;
 }
 
-.nopadding {
-    padding: 0;
+body {
+    margin: 3vh auto;
+    max-width: 1440px;
+}
+
+/* -------
+Header styles
+---------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+    position: relative;
+    margin: 0 5vw;
+}
+
+/* Es gibt zwei Klassen für das selbe Element, kann durch Klick getogglt werden, siehe js */
+.headerButtonGetStartedIsNotBlack {
+    font-family: Graphik-Regular;
+    color: black;
+    text-decoration: none;
+    padding: 1vh 4vw;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.headerButtonGetStartedIsBlack {
+    font-family: Graphik-Regular;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1vh 4vw;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* --- */
+
+nav a {
+    font-family: Graphik-Regular;
+    color: black;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-size: 0.8rem;
+}
+
+h2 { /* Logo oben in der Mitte */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    font-family: Tiempos;
+}
+
+/* -------
+Main styles
+---------- */
+h1 {  /* Titel der Seite */
+    text-align: center;
+    padding-bottom: 70vh;
+    background-image: url("../img/home_hero.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    font-family: Graphik-Regular;
 }
 
 
-/* Section How it works */
+/* ------Section Price------ */
+.sectionPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 20vh 0;
+    width: 80vw;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sectionPrice p {
+    width: 70%;
+    padding-right: 5vw;
+    font-family: Graphik-Medium;
+    line-height: 1.5rem;
+}
+
+.sectionPrice article p {
+    font-family: Theinhardt;
+    padding: 2vh 0;
+}
+
+.sectionPrice article p:nth-of-type(1) {
+    font-size: 4rem;
+}
+
+.sectionPrice article p:nth-of-type(2) {
+    font-size: 0.8rem;
+    color: #a4a7ab;
+    width: 80%;
+    line-height: 1rem;
+}
+
+
+/* ------Section Deliverables------ */
+.sectionDeliverables {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.sectionDeliverables img {
+    width: 35vw;
+}
+
+
+/* ------Section How it works------ */
 .sectionHowItWorks {
     display: flex;
     align-items: center;
@@ -193,20 +195,23 @@ ol {
 
 li {
     font-family: Theinhardt;
-    padding: 0 0 0 1vw;
     margin-left: 2vw;
     color: #96999b;
     line-height: 1.5rem;
 }
 
 
-/* section Critique */
+/* ------section Critique------ */
 .sectionCritique {
     text-align: center;
 }
 
 .sectionCritique h3 {
     margin: 5vh 0;
+}
+
+.sectionCritiqueTextArticle p { /* Der Text wird zusätzlich durch die Klasse .text gestylt, diese hat aber ein padding, was hier nicht erscheinen soll. */
+    padding: 0;
 }
 
 
@@ -223,24 +228,31 @@ li {
 }
 
 .sectionCritiqueImgArticle p {
-    margin: 0 0 0 10px;
-    width: 40vw;
-    text-align: left;
+    margin-left: 10px;
+    width: 30vw;
     line-height: 2rem;
     font-family: Graphik-Medium;
     color: #96999b;
     font-weight: 900;
 }
 
+.spanDesktop { /* Die spans werden verwendet um den Text genau an dieser Stelle umbrechen zu lassen. Sieht besser aus. Es gibt einen zweiten span für mobile, wird unten gestylt. */
+    display: block;
+}
+
 .sectionCritiqueImgGuy {
     width: 40vw;
     max-width: 600px;
     position: absolute;
-    bottom: 15vh;
+    top: 40%;
 }
-
 /* --- */
 
+
+
+/* -------
+Footer styles
+---------- */
 footer {
     text-align: center;
     border-top: 1px solid #d0d1d3;
@@ -257,13 +269,9 @@ footer p {
 
 footer p::before {
     background-image: url('../img/costume_guy.png');
-    background-size: 10vh 5vw;
     background-repeat: no-repeat;
     background-size: contain;
-    display: inline-block;
     width: 5vw; 
-    height: 10vh;
-    content:"";
 }
 
 footer p a {
@@ -271,47 +279,48 @@ footer p a {
     text-decoration: none;
 }
 
+
+/* -------
+Mobile styles
+---------- */
 @media screen and (max-width: 480px) {
+    /* ------header------ */
     header {
         flex-direction: column;
-        margin: 0 auto;
-        padding-bottom: 5vh;
+        margin: 0 auto 5vh auto;
     }
     
     nav {
-        padding-top: 7vh;
-        margin-bottom: 4vh;
+        padding: 7vh 0 4vh 0;
     }
 
     h1 {
-        padding: 6vw;
-        padding-bottom: 20vh;
+        padding: 0 6vw 20vh 6vw;
     }
 
+    /* ------section Price------ */
     .sectionPrice {
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
         padding: 10vh 0;
     }
 
     .sectionPrice p {
-        width: 100%;
+        width: 100%; /* wurde für Desktop beschränkt, muss deshalb hier aufgehoben werden */
         text-align: center;
-        padding: 0;
     }
 
     .sectionPrice article p:nth-of-type(1) {
-        padding: 0;
+        padding: 0; /* wird von Desktop aufgehoben */
         margin-top: 10vh;
     }
     
     .sectionPrice article p:nth-of-type(2) {
-        padding: 0;
+        padding: 0; /* wird von Desktop aufgehoben */
         margin-top: 3vh;
-        width: 100%;
+        width: 100%; /* wurde für Desktop beschränkt, muss deshalb hier aufgehoben werden */
     }
 
+    /* ------section Deliverables------ */
     .sectionDeliverables {
         flex-direction: column;
     }
@@ -321,6 +330,7 @@ footer p a {
         padding: 5vh 0;
     }
 
+    /* ------section How it works------ */
     .sectionHowItWorks {
         flex-direction: column-reverse;
         padding: 5vh 1vw;
@@ -336,29 +346,32 @@ footer p a {
         margin-left: 5vw;
     }
     
-    .mobilepadding {
-        padding: 3vh 0;
-    }
-
+    /* ------section Critique------ */
     .sectionCritiqueTextArticle {
         width: 70vw;
         margin: 0 auto;
     }
 
     .sectionCritiqueImgArticle {
-        margin: 0 5vw 5vh 5vw;
-        max-width: none;
+        margin: 0 5vw 3vh 5vw;
+        max-width: none; /* wird von Desktop aufgehoben */
         padding: 3vh 0;
     }
 
-    .sectionCritiqueImgGuy {
-        bottom: 12vh;
+    .sectionCritiqueImgArticle p {
+        width: 60vw;
+        text-align: left;
     }
 
-    .sectionCritiqueImgArticle p:nth-of-type(2), .sectionCritiqueImgArticle p:nth-of-type(3) {
-        width: 100vw;
+    .spanDesktop { /* Die spans werden verwendet um den Text genau an dieser Stelle umbrechen zu lassen. Sieht besser aus. Der Desktop span wurde oben bereits als block gesetzt. */
+        display: inline;
     }
-    
+
+    .spanMobile {
+        display: block;
+    }
+
+    /* ------section Footer------ */    
     footer p::before {
         background-image: url('../img/costume_guy.png');
         background-repeat: no-repeat;
@@ -367,9 +380,5 @@ footer p a {
         width: 10vw; 
         height: 5vh;
         content:"";
-    }
-    
+    }   
 }
-
-
-
