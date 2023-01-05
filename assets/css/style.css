@@ -47,6 +47,7 @@ h4 {
     padding: 0 0 3vh 3vw;
     color: #96999b;
     line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 body {
@@ -190,14 +191,15 @@ h1 {  /* Titel der Seite */
 }
 
 ol {
-    padding-bottom: 2vh;
+    margin: 0 0 2vh 5vw;
 }
 
 li {
     font-family: Theinhardt;
-    margin-left: 2vw;
+    padding: 0 2vw;
     color: #96999b;
     line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -234,6 +236,7 @@ li {
     font-family: Graphik-Medium;
     color: #96999b;
     font-weight: 900;
+    text-align: left;
 }
 
 .spanDesktop { /* Die spans werden verwendet um den Text genau an dieser Stelle umbrechen zu lassen. Sieht besser aus. Es gibt einen zweiten span für mobile, wird unten gestylt. */
@@ -271,7 +274,10 @@ footer p::before {
     background-image: url('../img/costume_guy.png');
     background-repeat: no-repeat;
     background-size: contain;
+    display: inline-block;
     width: 5vw; 
+    height: 15vh;
+    content:"";
 }
 
 footer p a {
@@ -296,6 +302,10 @@ Mobile styles
 
     h1 {
         padding: 0 6vw 20vh 6vw;
+    }
+
+    .text {
+        font-size: 1.0rem;
     }
 
     /* ------section Price------ */
@@ -343,7 +353,11 @@ Mobile styles
     }
     
     ol {
-        margin-left: 5vw;
+        margin-left: 10vw;
+    }
+
+    li {
+        font-size: 1rem;
     }
     
     /* ------section Critique------ */
